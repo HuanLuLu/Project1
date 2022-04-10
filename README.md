@@ -60,4 +60,4 @@ Then we compared other metrics, like accurace, recall and f1 score, between Logi
 
 After comparing four different types of classifiers in this project, we found the Logistic Regression algorithm has the best performance. Meanwhile, by adding new minority class data points in our training data, our classifiers are pushed to focus more on class 1 data and increase the precision in our results.
 
-**Note:** Predictions and accuracies may be subjected to change since we introduce random seed into the process. But The main thing is to see if our models are able to correctly predict the product quality, especially to find the high-quality ones.
+**Note:** Predictions and precisions may be subjected to change since we introduce random seed into the process. But The main thing is to see if our models are able to correctly predict the product quality, especially to find the high-quality ones.
