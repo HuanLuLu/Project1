@@ -10,3 +10,8 @@ The names of features in the dataset are not shown due to privacy reasons. Never
 ## Findings
 ### Output distribution
 As seen below, the output y value distribution is right-skewed with moderately imbalanced. We will compare the prediction result without and with handling the imbalance.
+![](images/Output%20Distribution.png)
+
+### Data Visulization
+Here, we use the t-SNE algorithm to visualize the data. As shown in the 2D graph, high-quality product data tend to be clustered at the bottom of the graph.
+![](images/2D%20visualization.png)
