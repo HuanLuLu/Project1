@@ -1,6 +1,21 @@
 # Project1 Real World Refinery Product Prediction
 Analyze real-world refinery product data, Compare four Classifiers and choose one as our module to predict the quality of our product.
 ## Table of Contents
+* [Background](#background)
+
+* [Findings](#findings)
+
+  * [Output distribution](#output-distribution)
+
+  * [Data Visulization](#data-visulization)
+
+  * [Feature Correlation](#feature-correlation)
+
+  * [Imbalanced Data Handling](#imbalanced-data-handling)
+
+  * [Test Results Comparison](#test-results-comparison)
+
+* [Conclusion](#conclusion)
 
 ## Background
 In this project, we are given 21983 copies of data of real-world refinery project data with 14 features. Our goal is to predict the quality of a product. More specifically, we want our model helps us find what inputs could make high-quality products. So we will consdier presicion as our main metrics.
@@ -8,7 +23,7 @@ In this project, we are given 21983 copies of data of real-world refinery projec
 The names of features in the dataset are not shown due to privacy reasons. Nevertheless, we know that high-quality products have a corresponding y value of less than 2; otherwise, the product is low-quality.
 
 ## Findings
-### Output distribution
+### Output Distribution
 As seen below, the output y value distribution is right-skewed with moderately imbalanced. We will compare the prediction result without and with handling the imbalance.
 
 ![](images/Output%20Distribution.png)
@@ -39,4 +54,8 @@ First, we applied four different machine learning algorithms on the unbalanced d
 
 Then we compared other metrics, like accurace, recall and f1 score, between Logistic Regression and Decision Tree. Logistic Regression has better performance overall. So we will choose the Logistic Regression model.
 
-![](images/Prediction20%comparison.png)
+![](images/Prediction%20comparison.png)
+
+## Conclusion
+
+After comparing four different types of classifiers in this project, we found the Logistic Regression algorithm has the best performance. Meanwhile, by adding new minority class data points in our training data, our classifiers are pushed to focus more on class 1 data and increase the precision in our results.
