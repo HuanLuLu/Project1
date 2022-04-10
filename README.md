@@ -7,7 +7,7 @@ Analyze real-world refinery product data, Compare four Classifiers and choose on
 
   * [Output distribution](#output-distribution)
 
-  * [Data Visulization](#data-visulization)
+  * [Data Visualization](#data-visualization)
 
   * [Feature Correlation](#feature-correlation)
 
@@ -18,7 +18,7 @@ Analyze real-world refinery product data, Compare four Classifiers and choose on
 * [Conclusion](#conclusion)
 
 ## Background
-In this project, we are given 21983 copies of data of real-world refinery project data with 14 features. Our goal is to predict the quality of a product. More specifically, we want our model helps us find what inputs could make high-quality products. So we will consdier presicion as our main metrics.
+In this project, we are given 21983 copies of data of real-world refinery project data with 14 features. Our goal is to predict the quality of a product. More specifically, we want our model helps us find what inputs could make high-quality products. So we will consider precision as our primary metric.
 
 The names of features in the dataset are not shown due to privacy reasons. Nevertheless, we know that high-quality products have a corresponding y value of less than 2; otherwise, the product is low-quality.
 
@@ -28,7 +28,7 @@ As seen below, the output y value distribution is right-skewed with moderately i
 
 ![](images/Output%20Distribution.png)
 
-### Data Visulization
+### Data Visualization
 Here, we use the t-SNE algorithm to visualize the data. As shown in the 2D graph, high-quality product data tend to be clustered at the bottom of the graph.
 
 ![](images/2D%20visualization.png)
@@ -50,14 +50,14 @@ Resampling, including oversampling and undersampling, is the common solution. Ho
 ![](images/Cluster%20comparison.png)
 
 ### Test Results Comparison
-First, we applied four different machine learning algorithms on the unbalanced data(Original data) and balanced data(after applying SMOTE) separately, and compared the precision. The Decision Tree has the best precision(95.8%), meanwhile the Logistic Regression is only slightly lower(95.2%).
+First, we separately applied four different machine learning algorithms to the unbalanced data(Original data) and balanced data(after applying SMOTE) and compared the precision. The Decision Tree has the best precision(95.8%). Meanwhile, the Logistic Regression is only slightly lower(95.2%).
 
-Then we compared other metrics, like accurace, recall and f1 score, between Logistic Regression and Decision Tree. Logistic Regression has better performance overall. So we will choose the Logistic Regression model.
+Then we compared other metrics, like accuracy, recall, and f1 score, between Logistic Regression and Decision Tree. Logistic Regression has better performance overall. So we will choose the Logistic Regression model.
 
 ![](images/Prediction%20comparison.png)
 
 ## Conclusion
 
-After comparing four different types of classifiers in this project, we found the Logistic Regression algorithm has the best performance. Meanwhile, by adding new minority class data points in our training data, our classifiers are pushed to focus more on class 1 data and increase the precision in our results.
+After comparing four different classifiers in this project, we found that the Logistic Regression algorithm has the best performance. Meanwhile, by adding new minority class data points in our training data, our classifiers are pushed to focus more on class 1 data and increase the precision of our results.
 
-**Note:** Predictions and precisions may be subjected to change since we introduce random seed into the process. But The main thing is to see if our models are able to correctly predict the product quality, especially to find the high-quality ones.
+**Note:** Predictions and precisions may be subjected to change since we introduce random seeds into the process. But The main thing is to see if our models are able to correctly predict the product quality, especially to find the high-quality ones.
