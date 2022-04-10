@@ -28,3 +28,9 @@ The dataset with highly correlated features will cause a " Multicollinearity " i
 
 ![](images/Feature%20Correlation.png)
 
+### Imbalanced Data Handling
+
+Resampling, including oversampling and undersampling, is the common solution. However, we want our model to learn as many features of high-quality products as possible in our case. Therefore, instead of undersampling data in the majority class, we will apply SMOTE, Synthetic Minority Over-Sampling Technique, to synthesize new examples from the minority class, the low-quality products. The result is shown as follows:
+
+
+
