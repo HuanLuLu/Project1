@@ -39,3 +39,4 @@ First, we applied four different machine learning algorithms on the unbalanced d
 
 Then we compared other metrics, like accurace, recall and f1 score, between Logistic Regression and Decision Tree. Logistic Regression has better performance overall. So we will choose the Logistic Regression model.
 
+![](images/Prediction20%comparison.png)
