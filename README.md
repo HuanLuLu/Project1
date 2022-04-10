@@ -3,7 +3,7 @@ Analyze real-world refinery product data, Compare four Classifiers and choose on
 ## Table of Contents
 
 ## Background
-In this project, we are given 21983 copies of data of real-world refinery project data with 14 features. Our goal is to predict the quality of a product. More specifically, we want our model helps us find what inputs could make high-quality products. 
+In this project, we are given 21983 copies of data of real-world refinery project data with 14 features. Our goal is to predict the quality of a product. More specifically, we want our model helps us find what inputs could make high-quality products. So we will consdier presicion as our main metrics.
 
 The names of features in the dataset are not shown due to privacy reasons. Nevertheless, we know that high-quality products have a corresponding y value of less than 2; otherwise, the product is low-quality.
 
@@ -30,7 +30,12 @@ The dataset with highly correlated features will cause a " Multicollinearity " i
 
 ### Imbalanced Data Handling
 
-Resampling, including oversampling and undersampling, is the common solution. However, we want our model to learn as many features of high-quality products as possible in our case. Therefore, instead of undersampling data in the majority class, we will apply SMOTE, Synthetic Minority Over-Sampling Technique, to synthesize new examples from the minority class, the low-quality products. The result is shown as follows:
+Resampling, including oversampling and undersampling, is the common solution. However, we want our model to learn as many features of high-quality products as possible in our case. Therefore, instead of undersampling data in the majority class, we will apply SMOTE, Synthetic Minority Over-Sampling Technique, to synthesize new examples from the minority class, the low-quality products. The result is shown as follows. 
 
+![](images/Cluster%20comparison.png)
 
+### Test Results Comparison
+First, we applied four different machine learning algorithms on the unbalanced data(Original data) and balanced data(after applying SMOTE) separately, and compared the precision. The Decision Tree has the best precision(95.8%), meanwhile the Logistic Regression is only slightly lower(95.2%).
+
+Then we compared other metrics, like accurace, recall and f1 score, between Logistic Regression and Decision Tree. Logistic Regression has better performance overall. So we will choose the Logistic Regression model.
 
