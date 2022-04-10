@@ -20,4 +20,9 @@ Here, we use the t-SNE algorithm to visualize the data. As shown in the 2D graph
 
 The cluster is more visible in 3D coordinates.
 
-![](images/2D%20visualization.png)
+![](images/3D%20visualization.png)
+
+### Feature Correlation
+
+The dataset with highly correlated features will cause a " Multicollinearity " issue. Although correlation cannot be explained as causation, we still need to check the data and gain insights. We can observe that features x1 and x5 are almost perfectly positively correlated based on the correlation matrix. Features x7 and x8 are highly positively correlated too.
+
