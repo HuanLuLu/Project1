@@ -17,3 +17,7 @@ As seen below, the output y value distribution is right-skewed with moderately i
 Here, we use the t-SNE algorithm to visualize the data. As shown in the 2D graph, high-quality product data tend to be clustered at the bottom of the graph.
 
 ![](images/2D%20visualization.png)
+
+The cluster is more visible in 3D coordinates.
+
+![](images/2D%20visualization.png)
